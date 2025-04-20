@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="shortcut icon" href="../Icons/airbnb.png" type="image/png">
+    <link rel="stylesheet" href="../Styles/style.css">
+</head>
+<body>
+    <header class="header-box">
+        <img src="../Icons/Airbnb-Logo.png" alt="" class="logo-icon">
+        <div class="header-nav-btn">
+            <button type="button" class="header-btn nav-btn btn-homes">Homes</button>
+            <button type="button" class="header-btn nav-btn btn-exps">Experiences</button>
+        </div>
+        <div class="header-action-btn">
+            <button type="button" class="header-btn action-btn btn-bnbhome">Airbnb your home</button>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-globe2 header-btn header-globe-btn" viewBox="0 0 16 16">
+                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"/>
+            </svg>
+
+
+            <div class="profile-btn header-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-list profile-btn-icon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+
+                <img src="../Icons/Profile-icon.png" alt="" class="profile-btn-icon">
+
+            </div>
+        </div>
+    </header>
+
+    <div class="map-btn">
+        <button class="show-btn btn-map">Show Maps</button>
+        <button type="button" class="map-img-btn btn-map"><img src="../Icons/map-icon.png" alt=""></button>
+    </div>
+
+    <div class="search-criteria">
+        <div class="search-section where search-field">
+            <label for="destination" class="search-label">Where</label>
+            <input type="text" name="destination" class="where-input search-input" id="destination" placeholder="Search destinations">
+        </div>
+
+        <!-- <div style="width: 1px; height: 40px; background-color: gray; margin: 20px 0px;" class="line-where-in"></div> -->
+
+        <div class="search-section checkin search-field">
+            <label for="checkin" class="search-label">Check In</label>
+            <input type="text" name="checkin" class="checkin-input search-input" id="checkin" placeholder="Add date">
+        </div>
+
+        <!-- <div style="width: 1px; height: 40px; background-color: gray; margin: 20px 0px 20px 10px;" class="line-in-out"></div> -->
+
+        <div class="search-section checkout search-field">
+            <label for="checkout" class="search-label">Check Out</label>
+            <input type="text" name="checkout" class="checkout-input search-input" id="checkout" placeholder="Add date">
+        </div>
+
+        <!-- <div style="width: 1px; height: 40px; background-color: gray; margin: 20px 0px;" class="line-out-search"></div> -->
+
+        <div class="search-section search search-field">
+            <div class="search-details search-field">
+                <label for="who" class="search-label">Who</label>
+                <input type="text" name="who" class="who-input search-input" id="who" placeholder="Add guests">
+            </div>
+            <img src="../Icons/Search-icon.png" alt="" class="search-icon">
+        </div>
+    </div>
+    <hr class = "section-saperator">
+
+    <div class="section-icon">
+
+        <div class="catagoery-section" >
+            <div class="icons-section">
+                <div class="icons farm-icon-section">
+                    <img src="../Icons/farm-icon.jpg" alt="" class="icon-img farm-icon">
+                    <button type="button" class="icon-label farm-label">Farms</button>
+                </div>
+        
+                <div class="icons icon-icon-section">
+                    <img src="../Icons/icon-icon.webp" alt="" class="icon-img icon-icon">
+                    <button type="button" class="icon-label icon-label">Icons</button>
+                </div>
+        
+                <div class="icons Rooms-icon-section">
+                    <img src="../Icons/rooms-icon.jpg" alt="" class="icon-img Rooms-icon">
+                    <button type="button" class="icon-label Rooms-label">Rooms</button>
+                </div>
+        
+                <div class="icons pools-icon-section">
+                    <img src="../Icons/pool-icon.jpg" alt="" class="icon-img pools-icon">
+                    <button type="button" class="icon-label pools-label">Amazing pools</button>
+                </div>
+        
+                <div class="icons Luxe-icon-section">
+                    <img src="../Icons/luxe-icon.jpg" alt="" class="icon-img Luxe-icon">
+                    <button type="button" class="icon-label Luxe-label">Luxe</button>
+                </div>
+        
+                <div class="icons Windmills-icon-section">
+                    <img src="../Icons/windmill-icon.jpg" alt="" class="icon-img Windmills-icon">
+                    <button type="button" class="icon-label Windmills-label">Windmills</button>
+                </div>
+        
+                <div class="icons views-icon-section">
+                    <img src="../Icons/View-icon.jpg" alt="" class="icon-img views-icon">
+                    <button type="button" class="icon-label views-label">Amazing views</button>
+                </div>
+        
+                <div class="icons Countryside-icon-section">
+                    <img src="../Icons/countryside-icon.jpg" alt="" class="icon-img Countryside-icon">
+                    <button type="button" class="icon-label Countryside-label">Countryside</button>
+                </div>
+        
+                <div class="icons Beachfront-icon-section">
+                    <img src="../Icons/beach-icon.jpg" alt="" class="icon-img Beachfront-icon">
+                    <button type="button" class="icon-label Beachfront-label">Beachfront</button>
+                </div>
+        
+                <div class="icons treehouse-icon-section">
+                    <img src="../Icons/treehouse-icon.jpg" alt="" class="icon-img treehouse-icon">
+                    <button type="button" class="icon-label treehouse-label">Treehouses</button>
+                </div>
+        
+                <div class="icons cabin-icon-section">
+                    <img src="../Icons/cabin-icon.jpg" alt="" class="icon-img cabin-icon">
+                    <button type="button" class="icon-label cabin-label">Cabins</button>
+                </div>
+            </div>
+    
+            <div class="next-option">
+                <button type="button" class="next-button">
+                    <img src="../Icons/next-icon.png" alt="" class="next-img">
+                </button>
+                
+            </div>
+    
+            <div class="filter-option">
+                <button type="button" class="filter-img-btn">
+                    <img src="../Icons/filter-icon.png" alt="" class="filter-img">
+                </button>
+                
+                <button type="button" class = "filter-btn">Filter</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="room-section">
+        <div class="room-card">
+            <img src="../Images/House1.avif" alt="" class="product-image">
+            <button type="button" class="main product-btn">Mandrem, India</button>
+            <button type="button" class="distance product-btn sub">515 KM away</button>
+            <button type="button" class="available product-btn sub">22-27 May</button>
+            <div class="price-details">
+                <button type="button" class="price product-btn">Rs. 31,333/-</button>
+                <p>for 5 nights.</p>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <img src="../Images/House1.avif" alt="" class="product-image">
+            <button type="button" class="main product-btn">Mandrem, India</button>
+            <button type="button" class="distance product-btn sub">515 KM away</button>
+            <button type="button" class="available product-btn sub">22-27 May</button>
+            <div class="price-details">
+                <button type="button" class="price product-btn">Rs. 31,333/-</button>
+                <p>for 5 nights.</p>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <img src="../Images/House1.avif" alt="" class="product-image">
+            <button type="button" class="main product-btn">Mandrem, India</button>
+            <button type="button" class="distance product-btn sub">515 KM away</button>
+            <button type="button" class="available product-btn sub">22-27 May</button>
+            <div class="price-details">
+                <button type="button" class="price product-btn">Rs. 31,333/-</button>
+                <p>for 5 nights.</p>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <img src="../Images/House1.avif" alt="" class="product-image">
+            <button type="button" class="main product-btn">Mandrem, India</button>
+            <button type="button" class="distance product-btn sub">515 KM away</button>
+            <button type="button" class="available product-btn sub">22-27 May</button>
+            <div class="price-details">
+                <button type="button" class="price product-btn">Rs. 31,333/-</button>
+                <p>for 5 nights.</p>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <img src="../Images/House1.avif" alt="" class="product-image">
+            <button type="button" class="main product-btn">Mandrem, India</button>
+            <button type="button" class="distance product-btn sub">515 KM away</button>
+            <button type="button" class="available product-btn sub">22-27 May</button>
+            <div class="price-details">
+                <button type="button" class="price product-btn">Rs. 31,333/-</button>
+                <p>for 5 nights.</p>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <img src="../Images/House1.avif" alt="" class="product-image">
+            <button type="button" class="main product-btn">Mandrem, India</button>
+            <button type="button" class="distance product-btn sub">515 KM away</button>
+            <button type="button" class="available product-btn sub">22-27 May</button>
+            <div class="price-details">
+                <button type="button" class="price product-btn">Rs. 31,333/-</button>
+                <p>for 5 nights.</p>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <img src="../Images/House1.avif" alt="" class="product-image">
+            <button type="button" class="main product-btn">Mandrem, India</button>
+            <button type="button" class="distance product-btn sub">515 KM away</button>
+            <button type="button" class="available product-btn sub">22-27 May</button>
+            <div class="price-details">
+                <button type="button" class="price product-btn">Rs. 31,333/-</button>
+                <p>for 5 nights.</p>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <img src="../Images/House1.avif" alt="" class="product-image">
+            <button type="button" class="main product-btn">Mandrem, India</button>
+            <button type="button" class="distance product-btn sub">515 KM away</button>
+            <button type="button" class="available product-btn sub">22-27 May</button>
+            <div class="price-details">
+                <button type="button" class="price product-btn">Rs. 31,333/-</button>
+                <p>for 5 nights.</p>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <img src="../Images/House1.avif" alt="" class="product-image">
+            <button type="button" class="main product-btn">Mandrem, India</button>
+            <button type="button" class="distance product-btn sub">515 KM away</button>
+            <button type="button" class="available product-btn sub">22-27 May</button>
+            <div class="price-details">
+                <button type="button" class="price product-btn">Rs. 31,333/-</button>
+                <p>for 5 nights.</p>
+            </div>
+        </div>
+
+        <div class="room-card">
+            <img src="../Images/House1.avif" alt="" class="product-image">
+            <button type="button" class="main product-btn">Mandrem, India</button>
+            <button type="button" class="distance product-btn sub">515 KM away</button>
+            <button type="button" class="available product-btn sub">22-27 May</button>
+            <div class="price-details">
+                <button type="button" class="price product-btn">Rs. 31,333/-</button>
+                <p>for 5 nights.</p>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
